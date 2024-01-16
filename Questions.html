@@ -5,7 +5,6 @@ body {
   background-image: url('Bkground.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
-  background-size: cover;
 }
     </style>
 </head>
@@ -14,6 +13,17 @@ body {
     
     <form action="mailto:rosellerpgutierrez@gmail.com" method="get"> 
     <p style='color:white;font-family:Helvetica'><b> How many gadgets do you use in a daily basis? </b><p>
-<input type="text" name="name" value="Name"> 
+<input type="text" name="name" value="Enter number"> 
       
+<form action="/action_page.php">
+  <input list="What gadgets or pieces of tech do you use in a daily basis">
+  <datalist id="What gadgets or pieces of tech do you use in a daily basis">
+    <option value="Laptop">
+    <option value="PC">
+    <option value="Phone">
+    <option value="iPad/Tablet">
+    <option value="">
+  </datalist>
+</form>
+  
   </body>
